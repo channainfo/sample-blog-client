@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"every single one","body":"The dopest tha shiznit nasty through
+        all the drama with my mind on my money waddup drizzle bubbles in the tub rolling
+        down the street. Rizzide zig zag smoke it''s 1993 if the ride is more fly,
+        then you must buy if you was me and I was you laid back. Bubbles in the tub
+        rolling down the street if you was me and I was you why is you sippin'' on
+        gin and juice the LBC pizzle may I Coupe de Ville. Feel the breeze I love
+        my momma sippin'' on gin and juice bubbles in the tub Long Beach."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '594'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":13,"title":"every single one","body":"The dopest tha
+        shiznit nasty through all the drama with my mind on my money waddup drizzle
+        bubbles in the tub rolling down the street. Rizzide zig zag smoke it''s 1993
+        if the ride is more fly, then you must buy if you was me and I was you laid
+        back. Bubbles in the tub rolling down the street if you was me and I was you
+        why is you sippin'' on gin and juice the LBC pizzle may I Coupe de Ville.
+        Feel the breeze I love my momma sippin'' on gin and juice bubbles in the tub
+        Long Beach.","created_at":"2021-09-29 08:53:24 +0700","updated_at":null}}'
+  recorded_at: Wed, 29 Sep 2021 01:53:24 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '622'
+    body:
+      encoding: UTF-8
+      string: '{"id":13,"title":"every single one","body":"The dopest tha shiznit
+        nasty through all the drama with my mind on my money waddup drizzle bubbles
+        in the tub rolling down the street. Rizzide zig zag smoke it''s 1993 if the
+        ride is more fly, then you must buy if you was me and I was you laid back.
+        Bubbles in the tub rolling down the street if you was me and I was you why
+        is you sippin'' on gin and juice the LBC pizzle may I Coupe de Ville. Feel
+        the breeze I love my momma sippin'' on gin and juice bubbles in the tub Long
+        Beach.","created_at":"2021-09-29 08:53:24 +0700","updated_at":null,"comments_path":"/posts/13/comments"}'
+  recorded_at: Wed, 29 Sep 2021 01:53:24 GMT
+- request:
+    method: post
+    uri: http://localhost:3030/posts/13/comments
+    body:
+      encoding: UTF-8
+      string: '{"name":"every single one","body":"The dopest tha shiznit nasty through
+        all the drama with my mind on my money waddup drizzle bubbles in the tub rolling
+        down the street. Rizzide zig zag smoke it''s 1993 if the ride is more fly,
+        then you must buy if you was me and I was you laid back. Bubbles in the tub
+        rolling down the street if you was me and I was you why is you sippin'' on
+        gin and juice the LBC pizzle may I Coupe de Ville. Feel the breeze I love
+        my momma sippin'' on gin and juice bubbles in the tub Long Beach."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '590'
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"id":3,"name":"every single one","body":"The dopest tha
+        shiznit nasty through all the drama with my mind on my money waddup drizzle
+        bubbles in the tub rolling down the street. Rizzide zig zag smoke it''s 1993
+        if the ride is more fly, then you must buy if you was me and I was you laid
+        back. Bubbles in the tub rolling down the street if you was me and I was you
+        why is you sippin'' on gin and juice the LBC pizzle may I Coupe de Ville.
+        Feel the breeze I love my momma sippin'' on gin and juice bubbles in the tub
+        Long Beach.","post_id":13,"created_at":"2021-09-29 08:53:24 +0700"}}'
+  recorded_at: Wed, 29 Sep 2021 01:53:24 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,19 @@
+h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl" = @post.title
+p class="text-sm md:text-base font-normal text-gray-600" = "Published #{@post.created_at}"
+
+p.py-6 = @post.body
+
+
+h2 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-xl md:text-2xl" Comments
+- if @comments.empty?
+  p Be the first to make comment
+
+- else
+  div
+    - @comments.each do |comment|
+      h3 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-xl md:text-1xl" = comment.name
+      p class="text-sm md:text-base font-normal text-gray-600" = "Commented at #{comment.created_at}"
+
+      p.py-6 = comment.body
+
+p.py-6 = link_to "Create comment", new_post_comment_path(post_id: @post.id), class: 'bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'

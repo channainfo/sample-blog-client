@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"now I''m on parole","body":"How we do it real deal Holyfield
+        through all the drama gizzo rizzide. Put ya choppers up roll with may I used
+        to sell loot make a few ends drop it like it''s hot zig zag smoke hizzouse
+        bubbles in the tub. Everybody got they cups realer the Magic Johnson of rap
+        eighty degrees I love my momma why is you drizzle used to sell loot the S
+        oh yes. I love my momma in tha hizzle if you was me and I was you everybody
+        got they cups Doggfada tha dizzle rizzide sippin'' on gin and juice. Why is
+        you bubbles in the tub fo shizzle televizzle everybody got they cups recognize
+        waddup used to sell loot."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '704'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":14,"title":"now I''m on parole","body":"How we do it
+        real deal Holyfield through all the drama gizzo rizzide. Put ya choppers up
+        roll with may I used to sell loot make a few ends drop it like it''s hot zig
+        zag smoke hizzouse bubbles in the tub. Everybody got they cups realer the
+        Magic Johnson of rap eighty degrees I love my momma why is you drizzle used
+        to sell loot the S oh yes. I love my momma in tha hizzle if you was me and
+        I was you everybody got they cups Doggfada tha dizzle rizzide sippin'' on
+        gin and juice. Why is you bubbles in the tub fo shizzle televizzle everybody
+        got they cups recognize waddup used to sell loot.","created_at":"2021-09-29
+        08:53:24 +0700","updated_at":null}}'
+  recorded_at: Wed, 29 Sep 2021 01:53:24 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '732'
+    body:
+      encoding: UTF-8
+      string: '{"id":14,"title":"now I''m on parole","body":"How we do it real deal
+        Holyfield through all the drama gizzo rizzide. Put ya choppers up roll with
+        may I used to sell loot make a few ends drop it like it''s hot zig zag smoke
+        hizzouse bubbles in the tub. Everybody got they cups realer the Magic Johnson
+        of rap eighty degrees I love my momma why is you drizzle used to sell loot
+        the S oh yes. I love my momma in tha hizzle if you was me and I was you everybody
+        got they cups Doggfada tha dizzle rizzide sippin'' on gin and juice. Why is
+        you bubbles in the tub fo shizzle televizzle everybody got they cups recognize
+        waddup used to sell loot.","created_at":"2021-09-29 08:53:24 +0700","updated_at":null,"comments_path":"/posts/14/comments"}'
+  recorded_at: Wed, 29 Sep 2021 01:53:24 GMT
+recorded_with: VCR 6.0.0

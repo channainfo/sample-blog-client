@@ -1,0 +1,18 @@
+h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl" = "Create a comment for: #{@post.title}"
+
+div
+  = form_for @comment, url: post_comments_path(post_id: params[:post_id]) , class: 'bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4' do |f|
+    div class="mb-6"
+      = f.label :name, class: "block text-gray-700 text-sm font-bold mb-2"
+      = f.text_field :name, class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      p class="text-red-500 text-xs italic" = @comment.errors['name'].first
+
+    div class="mb-6"
+      = f.label :body, class: "block text-gray-700 text-sm font-bold mb-2"
+      = f.text_area :body, class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      p class="text-red-500 text-xs italic" =  @comment.errors['body'].first
+
+
+    div class="mb-6"
+      = f.submit "Save", class: 'bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'
+

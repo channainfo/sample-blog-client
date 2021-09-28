@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3030/posts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1302'
+    body:
+      encoding: UTF-8
+      string: '{"posts":[{"id":1,"title":"Rails","body":"Getting even more awesome!","created_at":"2021-09-29
+        06:35:24 +0700","updated_at":null},{"id":2,"title":"the S oh yes","body":"Feel
+        the breeze the Magic Johnson of rap like every single day why is you realer
+        the S oh yes for the Gs at ease if you was me and I was you. Mr. buckwort
+        put ya choppers up I love my momma fo rizzle real deal Holyfield Doggfada
+        eighty degrees the Dogg Pound. And my money on my mind if the ride is more
+        fly, then you must buy smokin'' weed now I''m on parole waddup the LBC fo
+        shizzle the Dogg Pound. Coupe de ville nasty fo shizzle smokin'' weed the
+        diggy rizzoad smokin'' indo the S oh yes laid back.","created_at":"2021-09-29
+        08:31:03 +0700","updated_at":null},{"id":3,"title":"Coupe de Ville","body":"May
+        i rolling down the street roll with realer rizzoad. Fo rizzle the Magic Johnson
+        of rap feel the breeze rizzoad put ya choppers up bionic. Everybody got they
+        cups and my money on my mind like every single day if the ride is more fly,
+        then you must buy for the Gs. Eighty degrees the S oh yes now I''m on parole
+        smokin'' indo may I. May i Snoopy for the hustlers the S oh yes everybody
+        got they cups tha dizzle if the ride is more fly, then you must buy zig zag
+        smoke.","created_at":"2021-09-29 08:31:03 +0700","updated_at":null}]}'
+  recorded_at: Wed, 29 Sep 2021 01:34:11 GMT
+recorded_with: VCR 6.0.0

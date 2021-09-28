@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"plizzay","body":"The magic johnson of rap bionic I love my
+        momma put ya choppers up roll with waddup in tha hizzle. Drop it like it''s
+        hot waddup realness guess what? nasty at ease nothing can save ya with my
+        mind on my money. Drop it like it''s hot Snoopy real deal Holyfield it''s
+        1993 Doggfada I love my momma the LBC rizzide."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '414'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":10,"title":"plizzay","body":"The magic johnson of rap
+        bionic I love my momma put ya choppers up roll with waddup in tha hizzle.
+        Drop it like it''s hot waddup realness guess what? nasty at ease nothing can
+        save ya with my mind on my money. Drop it like it''s hot Snoopy real deal
+        Holyfield it''s 1993 Doggfada I love my momma the LBC rizzide.","created_at":"2021-09-29
+        08:49:06 +0700","updated_at":null}}'
+  recorded_at: Wed, 29 Sep 2021 01:49:07 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '442'
+    body:
+      encoding: UTF-8
+      string: '{"id":10,"title":"plizzay","body":"The magic johnson of rap bionic
+        I love my momma put ya choppers up roll with waddup in tha hizzle. Drop it
+        like it''s hot waddup realness guess what? nasty at ease nothing can save
+        ya with my mind on my money. Drop it like it''s hot Snoopy real deal Holyfield
+        it''s 1993 Doggfada I love my momma the LBC rizzide.","created_at":"2021-09-29
+        08:49:06 +0700","updated_at":null,"comments_path":"/posts/10/comments"}'
+  recorded_at: Wed, 29 Sep 2021 01:49:07 GMT
+recorded_with: VCR 6.0.0

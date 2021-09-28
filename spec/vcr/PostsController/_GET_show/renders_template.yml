@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"tha dizzle","body":"Snoopy used to sell loot real deal Holyfield
+        put ya choppers up eighty degrees rizzide drop it like it''s hot why is you.
+        Make a few ends the dopest every single one the Dogg Pound Long Beach pizzle
+        rolling down the street why is you real deal Holyfield. Coupe de ville the
+        Magic Johnson of rap how we do it guess what? sippin'' on gin and juice Doggfada
+        nasty rizzoad. And my money on my mind at ease rizzoad real deal Holyfield
+        if the ride is more fly, then you must buy smokin'' indo."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '591'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":7,"title":"tha dizzle","body":"Snoopy used to sell loot
+        real deal Holyfield put ya choppers up eighty degrees rizzide drop it like
+        it''s hot why is you. Make a few ends the dopest every single one the Dogg
+        Pound Long Beach pizzle rolling down the street why is you real deal Holyfield.
+        Coupe de ville the Magic Johnson of rap how we do it guess what? sippin''
+        on gin and juice Doggfada nasty rizzoad. And my money on my mind at ease rizzoad
+        real deal Holyfield if the ride is more fly, then you must buy smokin'' indo.","created_at":"2021-09-29
+        08:37:37 +0700","updated_at":null}}'
+  recorded_at: Wed, 29 Sep 2021 01:37:37 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '618'
+    body:
+      encoding: UTF-8
+      string: '{"id":7,"title":"tha dizzle","body":"Snoopy used to sell loot real
+        deal Holyfield put ya choppers up eighty degrees rizzide drop it like it''s
+        hot why is you. Make a few ends the dopest every single one the Dogg Pound
+        Long Beach pizzle rolling down the street why is you real deal Holyfield.
+        Coupe de ville the Magic Johnson of rap how we do it guess what? sippin''
+        on gin and juice Doggfada nasty rizzoad. And my money on my mind at ease rizzoad
+        real deal Holyfield if the ride is more fly, then you must buy smokin'' indo.","created_at":"2021-09-29
+        08:37:37 +0700","updated_at":null,"comments_path":"/posts/7/comments"}'
+  recorded_at: Wed, 29 Sep 2021 01:37:37 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/7/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+    body:
+      encoding: UTF-8
+      string: '{"comments":[]}'
+  recorded_at: Wed, 29 Sep 2021 01:37:37 GMT
+recorded_with: VCR 6.0.0

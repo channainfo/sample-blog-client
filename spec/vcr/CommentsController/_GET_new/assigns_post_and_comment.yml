@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"rizzoad","body":"Realness it''s 1993 pizzle Coupe de Ville
+        gizzo with my mind on my money Mr. Buckwort nasty. Laid back make a few ends
+        Coupe de Ville you talk too much may I tha dizzle. Every single one eighty
+        degrees nasty for the Gs everybody got they cups hizzouse guess what?. Feel
+        the breeze Snoop fizzle pizzle the LBC rolling down the street."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '437'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":11,"title":"rizzoad","body":"Realness it''s 1993 pizzle
+        Coupe de Ville gizzo with my mind on my money Mr. Buckwort nasty. Laid back
+        make a few ends Coupe de Ville you talk too much may I tha dizzle. Every single
+        one eighty degrees nasty for the Gs everybody got they cups hizzouse guess
+        what?. Feel the breeze Snoop fizzle pizzle the LBC rolling down the street.","created_at":"2021-09-29
+        08:49:07 +0700","updated_at":null}}'
+  recorded_at: Wed, 29 Sep 2021 01:49:07 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '465'
+    body:
+      encoding: UTF-8
+      string: '{"id":11,"title":"rizzoad","body":"Realness it''s 1993 pizzle Coupe
+        de Ville gizzo with my mind on my money Mr. Buckwort nasty. Laid back make
+        a few ends Coupe de Ville you talk too much may I tha dizzle. Every single
+        one eighty degrees nasty for the Gs everybody got they cups hizzouse guess
+        what?. Feel the breeze Snoop fizzle pizzle the LBC rolling down the street.","created_at":"2021-09-29
+        08:49:07 +0700","updated_at":null,"comments_path":"/posts/11/comments"}'
+  recorded_at: Wed, 29 Sep 2021 01:49:07 GMT
+recorded_with: VCR 6.0.0

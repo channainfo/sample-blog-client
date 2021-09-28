@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"Doggfada","body":"Doggfada zig zag smoke drop it like it''s
+        hot may I fizzle rizzide the dopest. Roll with you talk too much used to sell
+        loot fizzle realness. You talk too much bubbles in the tub through all the
+        drama at ease make a few ends. Rizzoad gold chain Snoop used to sell loot
+        fizzle laid back pizzle recognize. Gizzo drizzle nasty televizzle realer put
+        ya choppers up bionic."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '472'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":8,"title":"Doggfada","body":"Doggfada zig zag smoke drop
+        it like it''s hot may I fizzle rizzide the dopest. Roll with you talk too
+        much used to sell loot fizzle realness. You talk too much bubbles in the tub
+        through all the drama at ease make a few ends. Rizzoad gold chain Snoop used
+        to sell loot fizzle laid back pizzle recognize. Gizzo drizzle nasty televizzle
+        realer put ya choppers up bionic.","created_at":"2021-09-29 08:37:37 +0700","updated_at":null}}'
+  recorded_at: Wed, 29 Sep 2021 01:37:37 GMT
+- request:
+    method: post
+    uri: http://localhost:3030/posts/8/comments
+    body:
+      encoding: UTF-8
+      string: '{"name":"Idell Pacocha","body":"Nothing can save ya televizzle now
+        I''m on parole gold chain bionic for the hustlers drizzle. Every single one
+        guess what? drop it like it''s hot plizzay why is you rizzide. Put ya choppers
+        up zig zag smoke real deal Holyfield Doggfada with my mind on my money for
+        the Gs."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '376'
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"id":2,"name":"Idell Pacocha","body":"Nothing can save
+        ya televizzle now I''m on parole gold chain bionic for the hustlers drizzle.
+        Every single one guess what? drop it like it''s hot plizzay why is you rizzide.
+        Put ya choppers up zig zag smoke real deal Holyfield Doggfada with my mind
+        on my money for the Gs.","post_id":8,"created_at":"2021-09-29 08:37:37 +0700"}}'
+  recorded_at: Wed, 29 Sep 2021 01:37:37 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '499'
+    body:
+      encoding: UTF-8
+      string: '{"id":8,"title":"Doggfada","body":"Doggfada zig zag smoke drop it like
+        it''s hot may I fizzle rizzide the dopest. Roll with you talk too much used
+        to sell loot fizzle realness. You talk too much bubbles in the tub through
+        all the drama at ease make a few ends. Rizzoad gold chain Snoop used to sell
+        loot fizzle laid back pizzle recognize. Gizzo drizzle nasty televizzle realer
+        put ya choppers up bionic.","created_at":"2021-09-29 08:37:37 +0700","updated_at":null,"comments_path":"/posts/8/comments"}'
+  recorded_at: Wed, 29 Sep 2021 01:37:37 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/8/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '379'
+    body:
+      encoding: UTF-8
+      string: '{"comments":[{"id":2,"name":"Idell Pacocha","body":"Nothing can save
+        ya televizzle now I''m on parole gold chain bionic for the hustlers drizzle.
+        Every single one guess what? drop it like it''s hot plizzay why is you rizzide.
+        Put ya choppers up zig zag smoke real deal Holyfield Doggfada with my mind
+        on my money for the Gs.","post_id":8,"created_at":"2021-09-29 08:37:37 +0700"}]}'
+  recorded_at: Wed, 29 Sep 2021 01:37:37 GMT
+recorded_with: VCR 6.0.0

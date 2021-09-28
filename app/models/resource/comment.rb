@@ -11,6 +11,10 @@ class Resource::Comment < ::ApplicationResource
     self.prefix_options[:post_id] = post.id
   end
 
+  def post_id=(post_id)
+    self.prefix_options[:post_id] = post_id
+  end
+
   def validate_attributes
     self.errors.add("name", "must be present") if self.attributes[:name].blank?
     self.errors.add("body", "must be present") if self.attributes[:body].blank?
