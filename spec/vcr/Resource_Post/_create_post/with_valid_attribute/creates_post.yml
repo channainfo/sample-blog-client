@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"in tha hizzle","body":"Plizzay realness Mr. Buckwort Snoop
+        fo rizzle. Snoopy fo rizzle realer if the ride is more fly, then you must
+        buy sippin'' on gin and juice smokin'' weed. Waddup plizzay Doggfada fizzle
+        Snoopy hizzouse how we do it."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '324'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":12,"title":"in tha hizzle","body":"Plizzay realness Mr.
+        Buckwort Snoop fo rizzle. Snoopy fo rizzle realer if the ride is more fly,
+        then you must buy sippin'' on gin and juice smokin'' weed. Waddup plizzay
+        Doggfada fizzle Snoopy hizzouse how we do it.","created_at":"2021-09-28 19:23:32
+        +0700","updated_at":null}}'
+  recorded_at: Tue, 28 Sep 2021 12:23:32 GMT
+recorded_with: VCR 6.0.0

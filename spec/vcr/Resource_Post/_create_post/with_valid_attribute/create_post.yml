@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"drizzle","body":"For the hustlers through all the drama it''s
+        1993 bubbles in the tub if the ride is more fly, then you must buy fo rizzle
+        feel the breeze fo shizzle make a few ends. Smokin'' weed tha dizzle I love
+        my momma smokin'' indo Mr. Buckwort make a few ends roll with. It''s 1993
+        put ya choppers up sippin'' on gin and juice zig zag smoke waddup. Smokin''
+        weed Snoopy roll with recognize now I''m on parole for the Gs."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '508'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":11,"title":"drizzle","body":"For the hustlers through
+        all the drama it''s 1993 bubbles in the tub if the ride is more fly, then
+        you must buy fo rizzle feel the breeze fo shizzle make a few ends. Smokin''
+        weed tha dizzle I love my momma smokin'' indo Mr. Buckwort make a few ends
+        roll with. It''s 1993 put ya choppers up sippin'' on gin and juice zig zag
+        smoke waddup. Smokin'' weed Snoopy roll with recognize now I''m on parole
+        for the Gs.","created_at":"2021-09-28 18:09:30 +0700","updated_at":null}}'
+  recorded_at: Tue, 28 Sep 2021 11:09:30 GMT
+recorded_with: VCR 6.0.0

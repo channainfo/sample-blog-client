@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":null,"body":"Feel the breeze nothing can save ya realness
+        at ease tha dizzle realer real deal Holyfield televizzle. Nothing can save
+        ya how we do it fo rizzle laid back everybody got they cups if the ride is
+        more fly, then you must buy the diggy Long Beach. If the ride is more fly,
+        then you must buy and my money on my mind fo shizzle how we do it I love my
+        momma tha shiznit. Plizzay recognize put ya choppers up for the hustlers Doggfada
+        rizzoad. May i sippin'' on gin and juice the Magic Johnson of rap it''s 1993
+        if the ride is more fly, then you must buy fo rizzle."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '38'
+    body:
+      encoding: UTF-8
+      string: '{"errors":["''title'' must be present"]}'
+  recorded_at: Tue, 28 Sep 2021 11:13:06 GMT
+recorded_with: VCR 6.0.0

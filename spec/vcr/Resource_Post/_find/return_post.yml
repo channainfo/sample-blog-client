@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"for the hustlers","body":"Rolling down the street make a
+        few ends televizzle and my money on my mind fo rizzle with my mind on my money.
+        Long beach for the Gs drizzle at ease with my mind on my money smokin'' weed
+        sippin'' on gin and juice used to sell loot. Tha shiznit your chrome the LBC
+        put ya choppers up the Dogg Pound fo shizzle sippin'' on gin and juice recognize.
+        Roll with drizzle now I''m on parole gold chain bubbles in the tub fo shizzle
+        I love my momma."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '551'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":16,"title":"for the hustlers","body":"Rolling down the
+        street make a few ends televizzle and my money on my mind fo rizzle with my
+        mind on my money. Long beach for the Gs drizzle at ease with my mind on my
+        money smokin'' weed sippin'' on gin and juice used to sell loot. Tha shiznit
+        your chrome the LBC put ya choppers up the Dogg Pound fo shizzle sippin''
+        on gin and juice recognize. Roll with drizzle now I''m on parole gold chain
+        bubbles in the tub fo shizzle I love my momma.","created_at":"2021-09-28 19:59:09
+        +0700","updated_at":null}}'
+  recorded_at: Tue, 28 Sep 2021 12:59:09 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/16
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '579'
+    body:
+      encoding: UTF-8
+      string: '{"id":16,"title":"for the hustlers","body":"Rolling down the street
+        make a few ends televizzle and my money on my mind fo rizzle with my mind
+        on my money. Long beach for the Gs drizzle at ease with my mind on my money
+        smokin'' weed sippin'' on gin and juice used to sell loot. Tha shiznit your
+        chrome the LBC put ya choppers up the Dogg Pound fo shizzle sippin'' on gin
+        and juice recognize. Roll with drizzle now I''m on parole gold chain bubbles
+        in the tub fo shizzle I love my momma.","created_at":"2021-09-28 19:59:09
+        +0700","updated_at":null,"comments_path":"/posts/16/comments"}'
+  recorded_at: Tue, 28 Sep 2021 12:59:09 GMT
+recorded_with: VCR 6.0.0

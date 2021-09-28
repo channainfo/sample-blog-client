@@ -1,0 +1,192 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"realness","body":"Gizzo through all the drama laid back real
+        deal Holyfield for the Gs every single one. Nasty the diggy Snoop it''s 1993
+        may I fo rizzle with my mind on my money. Feel the breeze why is you zig zag
+        smoke gold chain may I nasty."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '331'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":15,"title":"realness","body":"Gizzo through all the drama
+        laid back real deal Holyfield for the Gs every single one. Nasty the diggy
+        Snoop it''s 1993 may I fo rizzle with my mind on my money. Feel the breeze
+        why is you zig zag smoke gold chain may I nasty.","created_at":"2021-09-28
+        19:54:34 +0700","updated_at":null}}'
+  recorded_at: Tue, 28 Sep 2021 12:54:34 GMT
+- request:
+    method: post
+    uri: http://localhost:3030/posts/15/comments
+    body:
+      encoding: UTF-8
+      string: '{"name":"Booker Moore","body":"In tha hizzle gizzo feel the breeze
+        the dopest put ya choppers up why is you real deal Holyfield Long Beach may
+        I. Why is you you talk too much the diggy real deal Holyfield Mr. Buckwort
+        bionic. Fo rizzle Coupe de Ville now I''m on parole hizzouse why is you for
+        the hustlers put ya choppers up televizzle."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '411'
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"id":8,"name":"Booker Moore","body":"In tha hizzle gizzo
+        feel the breeze the dopest put ya choppers up why is you real deal Holyfield
+        Long Beach may I. Why is you you talk too much the diggy real deal Holyfield
+        Mr. Buckwort bionic. Fo rizzle Coupe de Ville now I''m on parole hizzouse
+        why is you for the hustlers put ya choppers up televizzle.","post_id":15,"created_at":"2021-09-28
+        19:54:34 +0700"}}'
+  recorded_at: Tue, 28 Sep 2021 12:54:34 GMT
+- request:
+    method: post
+    uri: http://localhost:3030/posts/15/comments
+    body:
+      encoding: UTF-8
+      string: '{"name":"Marilou Greenfelder","body":"Rizzide waddup every single one
+        it''s 1993 smokin'' weed. Coupe de ville eighty degrees through all the drama
+        tha dizzle plizzay. Drop it like it''s hot fizzle Long Beach fo shizzle it''s
+        1993 and my money on my mind. Why is you Coupe de Ville for the Gs the Magic
+        Johnson of rap Snoop it''s 1993 bubbles in the tub put ya choppers up rolling
+        down the street. Recognize tha shiznit tha dizzle bionic make a few ends televizzle
+        every single one and my money on my mind."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '576'
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"id":9,"name":"Marilou Greenfelder","body":"Rizzide waddup
+        every single one it''s 1993 smokin'' weed. Coupe de ville eighty degrees through
+        all the drama tha dizzle plizzay. Drop it like it''s hot fizzle Long Beach
+        fo shizzle it''s 1993 and my money on my mind. Why is you Coupe de Ville for
+        the Gs the Magic Johnson of rap Snoop it''s 1993 bubbles in the tub put ya
+        choppers up rolling down the street. Recognize tha shiznit tha dizzle bionic
+        make a few ends televizzle every single one and my money on my mind.","post_id":15,"created_at":"2021-09-28
+        19:54:34 +0700"}}'
+  recorded_at: Tue, 28 Sep 2021 12:54:34 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/15/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '979'
+    body:
+      encoding: UTF-8
+      string: '{"comments":[{"id":8,"name":"Booker Moore","body":"In tha hizzle gizzo
+        feel the breeze the dopest put ya choppers up why is you real deal Holyfield
+        Long Beach may I. Why is you you talk too much the diggy real deal Holyfield
+        Mr. Buckwort bionic. Fo rizzle Coupe de Ville now I''m on parole hizzouse
+        why is you for the hustlers put ya choppers up televizzle.","post_id":15,"created_at":"2021-09-28
+        19:54:34 +0700"},{"id":9,"name":"Marilou Greenfelder","body":"Rizzide waddup
+        every single one it''s 1993 smokin'' weed. Coupe de ville eighty degrees through
+        all the drama tha dizzle plizzay. Drop it like it''s hot fizzle Long Beach
+        fo shizzle it''s 1993 and my money on my mind. Why is you Coupe de Ville for
+        the Gs the Magic Johnson of rap Snoop it''s 1993 bubbles in the tub put ya
+        choppers up rolling down the street. Recognize tha shiznit tha dizzle bionic
+        make a few ends televizzle every single one and my money on my mind.","post_id":15,"created_at":"2021-09-28
+        19:54:34 +0700"}]}'
+  recorded_at: Tue, 28 Sep 2021 12:54:34 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/15/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '979'
+    body:
+      encoding: UTF-8
+      string: '{"comments":[{"id":8,"name":"Booker Moore","body":"In tha hizzle gizzo
+        feel the breeze the dopest put ya choppers up why is you real deal Holyfield
+        Long Beach may I. Why is you you talk too much the diggy real deal Holyfield
+        Mr. Buckwort bionic. Fo rizzle Coupe de Ville now I''m on parole hizzouse
+        why is you for the hustlers put ya choppers up televizzle.","post_id":15,"created_at":"2021-09-28
+        19:54:34 +0700"},{"id":9,"name":"Marilou Greenfelder","body":"Rizzide waddup
+        every single one it''s 1993 smokin'' weed. Coupe de ville eighty degrees through
+        all the drama tha dizzle plizzay. Drop it like it''s hot fizzle Long Beach
+        fo shizzle it''s 1993 and my money on my mind. Why is you Coupe de Ville for
+        the Gs the Magic Johnson of rap Snoop it''s 1993 bubbles in the tub put ya
+        choppers up rolling down the street. Recognize tha shiznit tha dizzle bionic
+        make a few ends televizzle every single one and my money on my mind.","post_id":15,"created_at":"2021-09-28
+        19:54:34 +0700"}]}'
+  recorded_at: Tue, 28 Sep 2021 12:54:34 GMT
+recorded_with: VCR 6.0.0

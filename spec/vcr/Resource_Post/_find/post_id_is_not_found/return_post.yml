@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3030/posts/9999999
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Type:
+      - text/plain
+      Content-Length:
+      - '3380'
+    body:
+      encoding: UTF-8
+      string: "NoMethodError: undefined method `to_hash' for nil:NilClass\n\t/Users/channaly/Project/remote/blog-server/app.rb:58:in
+        `block (5 levels) in <class:App>'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/request.rb:499:in
+        `always'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/request.rb:490:in
+        `_verb'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/request.rb:93:in
+        `get'\n\t/Users/channaly/Project/remote/blog-server/app.rb:57:in `block (4
+        levels) in <class:App>'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/request.rb:499:in
+        `always'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/request.rb:165:in
+        `is'\n\t/Users/channaly/Project/remote/blog-server/app.rb:55:in `block (3
+        levels) in <class:App>'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/request.rb:564:in
+        `if_match'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/request.rb:211:in
+        `on'\n\t/Users/channaly/Project/remote/blog-server/app.rb:52:in `block (2
+        levels) in <class:App>'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/request.rb:564:in
+        `if_match'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/request.rb:211:in
+        `on'\n\t/Users/channaly/Project/remote/blog-server/app.rb:22:in `block in
+        <class:App>'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda.rb:486:in
+        `block in _roda_handle_main_route'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda.rb:484:in
+        `catch'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda.rb:484:in
+        `_roda_handle_main_route'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/roda-3.41.0/lib/roda/plugins/direct_call.rb:18:in
+        `call'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in
+        `call'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/lint.rb:50:in
+        `_call'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/lint.rb:38:in
+        `call'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/show_exceptions.rb:23:in
+        `call'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/common_logger.rb:38:in
+        `call'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/content_length.rb:17:in
+        `call'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/puma-5.5.0/lib/puma/configuration.rb:249:in
+        `call'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/puma-5.5.0/lib/puma/request.rb:77:in
+        `block in handle_request'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/puma-5.5.0/lib/puma/thread_pool.rb:340:in
+        `with_force_shutdown'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/puma-5.5.0/lib/puma/request.rb:76:in
+        `handle_request'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/puma-5.5.0/lib/puma/server.rb:447:in
+        `process_client'\n\t/Users/channaly/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/puma-5.5.0/lib/puma/thread_pool.rb:147:in
+        `block in spawn_thread'"
+  recorded_at: Tue, 28 Sep 2021 13:00:47 GMT
+recorded_with: VCR 6.0.0

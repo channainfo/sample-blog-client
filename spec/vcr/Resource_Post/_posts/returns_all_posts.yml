@@ -1,0 +1,210 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"roll with","body":"Long beach the dopest the Magic Johnson
+        of rap how we do it zig zag smoke. The dopest feel the breeze now I''m on
+        parole bionic it''s 1993. Zig zag smoke the LBC real deal Holyfield fizzle
+        bionic rolling down the street laid back. Realness now I''m on parole nasty
+        feel the breeze Snoop the S oh yes."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '404'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":13,"title":"roll with","body":"Long beach the dopest
+        the Magic Johnson of rap how we do it zig zag smoke. The dopest feel the breeze
+        now I''m on parole bionic it''s 1993. Zig zag smoke the LBC real deal Holyfield
+        fizzle bionic rolling down the street laid back. Realness now I''m on parole
+        nasty feel the breeze Snoop the S oh yes.","created_at":"2021-09-28 19:43:27
+        +0700","updated_at":null}}'
+  recorded_at: Tue, 28 Sep 2021 12:43:27 GMT
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"tha shiznit","body":"Rizzide Mr. Buckwort you talk too much
+        the Magic Johnson of rap smokin'' indo guess what? gizzo the dopest everybody
+        got they cups. At ease tha shiznit realness put ya choppers up the diggy laid
+        back your chrome. It''s 1993 the S oh yes rizzoad smokin'' weed televizzle
+        you talk too much fizzle Coupe de Ville the LBC. Zig zag smoke it''s 1993
+        waddup fo shizzle the diggy why is you realer."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '495'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":14,"title":"tha shiznit","body":"Rizzide Mr. Buckwort
+        you talk too much the Magic Johnson of rap smokin'' indo guess what? gizzo
+        the dopest everybody got they cups. At ease tha shiznit realness put ya choppers
+        up the diggy laid back your chrome. It''s 1993 the S oh yes rizzoad smokin''
+        weed televizzle you talk too much fizzle Coupe de Ville the LBC. Zig zag smoke
+        it''s 1993 waddup fo shizzle the diggy why is you realer.","created_at":"2021-09-28
+        19:43:27 +0700","updated_at":null}}'
+  recorded_at: Tue, 28 Sep 2021 12:43:28 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '8394'
+    body:
+      encoding: UTF-8
+      string: '{"posts":[{"id":1,"title":"The Great Title","body":"Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Pellentesque malesuada elit quis accumsan
+        dapibus. Proin pellentesque urna quam, ut condimentum erat ultrices at. Integer
+        fermentum dignissim urna. Aenean eget venenatis massa. Nam faucibus, tortor
+        vel viverra porttitor, magna magna posuere nibh, non venenatis tortor leo
+        non risus. Vestibulum aliquet magna ac blandit hendrerit. Donec congue lacinia
+        purus non dignissim. Sed auctor quis diam ut pellentesque. Vestibulum ac lacus
+        luctus, porta mi tempor, scelerisque est. Quisque ornare purus non libero
+        convallis, in posuere turpis finibus. Aenean tristique sapien risus, ac auctor
+        sapien blandit sed. Pellentesque at ligula massa. Donec accumsan ex id mi
+        aliquam, a ultrices libero ullamcorper. Curabitur quis ipsum in est viverra
+        consectetur.\n\nAenean et dapibus elit, a mattis ligula. Nullam eleifend,
+        enim sed accumsan faucibus, nibh arcu scelerisque dolor, eu sollicitudin turpis
+        justo id ex. Nulla sed fringilla nulla, vitae semper leo. Vivamus consectetur
+        in urna id tincidunt. Maecenas rhoncus est nec orci molestie tempor. Sed at
+        erat enim. Sed lobortis nisi ipsum, vel venenatis turpis aliquam nec. In condimentum
+        auctor volutpat. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos. Nullam libero purus, faucibus eu ligula ut,
+        placerat aliquam lorem. Aenean aliquam condimentum est. Nam rhoncus mi augue,
+        ut hendrerit lorem vehicula vel. Nam convallis non purus sit amet rutrum.
+        Ut rutrum mi ut ex suscipit venenatis.\n\nVestibulum ut leo et dolor tempus
+        cursus sed vel enim. Aenean at ante sit amet nisl dictum sodales. Aenean dignissim
+        dignissim interdum. Aliquam non varius dui. Quisque tincidunt diam ut efficitur
+        dapibus. Suspendisse mollis at tortor ut pulvinar. Mauris laoreet quam dui,
+        a dignissim arcu sodales eu. Sed gravida posuere sem eu viverra. Cras id egestas
+        erat. Ut dignissim elementum turpis, nec interdum nulla malesuada sit amet.","created_at":"2021-02-18
+        15:15:37 +0700","updated_at":null},{"id":2,"title":"A great blog","body":"Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin tellus
+        mollis erat varius, eu accumsan est luctus. Praesent eget massa orci. Nam
+        libero massa, dapibus vitae congue vel, rutrum mollis felis. Cras in dolor
+        non lectus malesuada ullamcorper vitae sit amet ante. Duis suscipit nulla
+        sed ex mollis, eget imperdiet mauris tincidunt. Nunc vulputate tortor vitae
+        tincidunt malesuada. Praesent ut placerat lacus. Aliquam aliquam ligula eget
+        volutpat semper. Nam nec dapibus ipsum. Aliquam ac nunc mattis velit finibus
+        imperdiet euismod ac arcu. Praesent a quam vel nulla dapibus facilisis. Aenean
+        fringilla auctor ligula et sagittis. Duis non volutpat tortor. Integer eget
+        odio id libero maximus luctus nec et odio.\n\nSuspendisse vel tellus ornare
+        libero tincidunt mollis. Duis non mollis mi. Morbi lobortis sit amet justo
+        faucibus fringilla. Phasellus tempor massa non turpis vulputate, at ultrices
+        neque tempus. Quisque quis convallis urna. Nam congue sapien sit amet nisi
+        finibus, vitae tincidunt tellus luctus. Curabitur sollicitudin eu ipsum eget
+        suscipit. Nunc lacus ligula, dictum eu ex a, dignissim dapibus arcu. In hac
+        habitasse platea dictumst. Pellentesque habitant morbi tristique senectus
+        et netus et malesuada fames ac turpis egestas. Cras euismod lacus elit, in
+        vehicula lorem condimentum sit amet. ","created_at":"2021-02-18 19:04:44 +0700","updated_at":null},{"id":3,"title":"ruby","body":"Rails
+        6","created_at":"2021-09-28 16:31:01 +0700","updated_at":null},{"id":4,"title":"Rust","body":"Awesome","created_at":"2021-09-28
+        16:49:38 +0700","updated_at":null},{"id":5,"title":"the S oh yes","body":"Long
+        beach zig zag smoke fo shizzle you talk too much televizzle Mr. Buckwort.
+        May i gizzo fo rizzle hizzouse if you was me and I was you put ya choppers
+        up eighty degrees Snoop used to sell loot. Roll with make a few ends now I''m
+        on parole the S oh yes waddup how we do it fo shizzle.","created_at":"2021-09-28
+        17:48:47 +0700","updated_at":null},{"id":6,"title":"waddup","body":"Now i''m
+        on parole roll with you talk too much Snoopy it''s 1993. Nothing can save
+        ya rizzide make a few ends feel the breeze it''s 1993 smokin'' indo your chrome.
+        Real deal holyfield bubbles in the tub nothing can save ya drop it like it''s
+        hot drizzle every single one realer. The s oh yes drizzle gold chain through
+        all the drama laid back fo shizzle now I''m on parole the Magic Johnson of
+        rap if the ride is more fly, then you must buy. If you was me and i was you
+        Snoop feel the breeze fizzle bionic how we do it zig zag smoke rizzide.","created_at":"2021-09-28
+        17:49:23 +0700","updated_at":null},{"id":7,"title":"rizzide","body":"Like
+        every single day real deal Holyfield sippin'' on gin and juice and my money
+        on my mind feel the breeze now I''m on parole roll with rizzide. Zig zag smoke
+        drop it like it''s hot tha dizzle the Magic Johnson of rap for the Gs. Like
+        every single day Long Beach it''s 1993 plizzay bionic Coupe de Ville. Smokin''
+        indo you talk too much through all the drama recognize sippin'' on gin and
+        juice realer televizzle tha shiznit. Drop it like it''s hot eighty degrees
+        televizzle sippin'' on gin and juice rizzoad gold chain gizzo.","created_at":"2021-09-28
+        17:50:20 +0700","updated_at":null},{"id":8,"title":"eighty degrees","body":"Sippin''
+        on gin and juice pizzle eighty degrees gizzo guess what?. Sippin'' on gin
+        and juice fo shizzle make a few ends in tha hizzle used to sell loot nothing
+        can save ya and my money on my mind. Tha shiznit the LBC bubbles in the tub
+        in tha hizzle recognize the diggy gizzo gold chain if you was me and I was
+        you.","created_at":"2021-09-28 17:50:44 +0700","updated_at":null},{"id":9,"title":"put
+        ya choppers up","body":"Put ya choppers up drop it like it''s hot televizzle
+        sippin'' on gin and juice at ease gizzo fo shizzle through all the drama roll
+        with. Nasty in tha hizzle realer why is you laid back. Smokin'' indo Mr. Buckwort
+        like every single day everybody got they cups I love my momma at ease Coupe
+        de Ville tha dizzle laid back.","created_at":"2021-09-28 17:56:20 +0700","updated_at":null},{"id":10,"title":"laid
+        back","body":"It''s 1993 rizzoad tha dizzle if the ride is more fly, then
+        you must buy rolling down the street realness. The dogg pound gold chain the
+        Magic Johnson of rap I love my momma plizzay smokin'' weed roll with smokin''
+        indo. Long beach I love my momma televizzle why is you laid back guess what?
+        tha shiznit at ease roll with. Everybody got they cups for the hustlers fo
+        rizzle through all the drama the Magic Johnson of rap.","created_at":"2021-09-28
+        18:04:36 +0700","updated_at":null},{"id":11,"title":"drizzle","body":"For
+        the hustlers through all the drama it''s 1993 bubbles in the tub if the ride
+        is more fly, then you must buy fo rizzle feel the breeze fo shizzle make a
+        few ends. Smokin'' weed tha dizzle I love my momma smokin'' indo Mr. Buckwort
+        make a few ends roll with. It''s 1993 put ya choppers up sippin'' on gin and
+        juice zig zag smoke waddup. Smokin'' weed Snoopy roll with recognize now I''m
+        on parole for the Gs.","created_at":"2021-09-28 18:09:30 +0700","updated_at":null},{"id":12,"title":"in
+        tha hizzle","body":"Plizzay realness Mr. Buckwort Snoop fo rizzle. Snoopy
+        fo rizzle realer if the ride is more fly, then you must buy sippin'' on gin
+        and juice smokin'' weed. Waddup plizzay Doggfada fizzle Snoopy hizzouse how
+        we do it.","created_at":"2021-09-28 19:23:32 +0700","updated_at":null},{"id":13,"title":"roll
+        with","body":"Long beach the dopest the Magic Johnson of rap how we do it
+        zig zag smoke. The dopest feel the breeze now I''m on parole bionic it''s
+        1993. Zig zag smoke the LBC real deal Holyfield fizzle bionic rolling down
+        the street laid back. Realness now I''m on parole nasty feel the breeze Snoop
+        the S oh yes.","created_at":"2021-09-28 19:43:27 +0700","updated_at":null},{"id":14,"title":"tha
+        shiznit","body":"Rizzide Mr. Buckwort you talk too much the Magic Johnson
+        of rap smokin'' indo guess what? gizzo the dopest everybody got they cups.
+        At ease tha shiznit realness put ya choppers up the diggy laid back your chrome.
+        It''s 1993 the S oh yes rizzoad smokin'' weed televizzle you talk too much
+        fizzle Coupe de Ville the LBC. Zig zag smoke it''s 1993 waddup fo shizzle
+        the diggy why is you realer.","created_at":"2021-09-28 19:43:27 +0700","updated_at":null}]}'
+  recorded_at: Tue, 28 Sep 2021 12:43:28 GMT
+recorded_with: VCR 6.0.0

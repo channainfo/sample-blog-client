@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"guess what?","body":"Sippin'' on gin and juice Snoopy recognize
+        pizzle real deal Holyfield roll with realer everybody got they cups. Rolling
+        down the street bubbles in the tub like every single day make a few ends fo
+        rizzle how we do it Long Beach drop it like it''s hot. If the ride is more
+        fly, then you must buy for the hustlers you talk too much rolling down the
+        street laid back Long Beach bubbles in the tub. Now i''m on parole roll with
+        may I if you was me and I was you tha dizzle the dopest smokin'' indo eighty
+        degrees rizzoad. Televizzle Snoopy Mr. Buckwort Long Beach gizzo drop it like
+        it''s hot."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '692'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":18,"title":"guess what?","body":"Sippin'' on gin and
+        juice Snoopy recognize pizzle real deal Holyfield roll with realer everybody
+        got they cups. Rolling down the street bubbles in the tub like every single
+        day make a few ends fo rizzle how we do it Long Beach drop it like it''s hot.
+        If the ride is more fly, then you must buy for the hustlers you talk too much
+        rolling down the street laid back Long Beach bubbles in the tub. Now i''m
+        on parole roll with may I if you was me and I was you tha dizzle the dopest
+        smokin'' indo eighty degrees rizzoad. Televizzle Snoopy Mr. Buckwort Long
+        Beach gizzo drop it like it''s hot.","created_at":"2021-09-28 20:20:07 +0700","updated_at":null}}'
+  recorded_at: Tue, 28 Sep 2021 13:20:07 GMT
+- request:
+    method: post
+    uri: http://localhost:3030/posts/18/comments
+    body:
+      encoding: UTF-8
+      string: '{"name":"Leandra Hessel","body":"For the hustlers through all the drama
+        the Dogg Pound I love my momma bionic feel the breeze. Long beach televizzle
+        with my mind on my money may I at ease. Drop it like it''s hot tha dizzle
+        with my mind on my money you talk too much nothing can save ya gold chain.
+        Fizzle the diggy the dopest you talk too much waddup Coupe de Ville I love
+        my momma. With my mind on my money waddup now I''m on parole Snoop how we
+        do it every single one Doggfada."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '553'
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"id":10,"name":"Leandra Hessel","body":"For the hustlers
+        through all the drama the Dogg Pound I love my momma bionic feel the breeze.
+        Long beach televizzle with my mind on my money may I at ease. Drop it like
+        it''s hot tha dizzle with my mind on my money you talk too much nothing can
+        save ya gold chain. Fizzle the diggy the dopest you talk too much waddup Coupe
+        de Ville I love my momma. With my mind on my money waddup now I''m on parole
+        Snoop how we do it every single one Doggfada.","post_id":18,"created_at":"2021-09-28
+        20:20:07 +0700"}}'
+  recorded_at: Tue, 28 Sep 2021 13:20:07 GMT
+recorded_with: VCR 6.0.0

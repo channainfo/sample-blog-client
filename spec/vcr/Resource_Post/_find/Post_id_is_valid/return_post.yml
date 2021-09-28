@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3030/posts
+    body:
+      encoding: UTF-8
+      string: '{"title":"drizzle","body":"Fo rizzle every single one everybody got
+        they cups sippin'' on gin and juice the diggy rolling down the street eighty
+        degrees feel the breeze realer. Recognize if you was me and I was you guess
+        what? hizzouse plizzay it''s 1993 everybody got they cups. Mr. buckwort smokin''
+        weed the Dogg Pound how we do it rizzide fo rizzle. With my mind on my money
+        the dopest zig zag smoke real deal Holyfield fo rizzle Mr. Buckwort."}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '522'
+    body:
+      encoding: UTF-8
+      string: '{"post":{"id":17,"title":"drizzle","body":"Fo rizzle every single one
+        everybody got they cups sippin'' on gin and juice the diggy rolling down the
+        street eighty degrees feel the breeze realer. Recognize if you was me and
+        I was you guess what? hizzouse plizzay it''s 1993 everybody got they cups.
+        Mr. buckwort smokin'' weed the Dogg Pound how we do it rizzide fo rizzle.
+        With my mind on my money the dopest zig zag smoke real deal Holyfield fo rizzle
+        Mr. Buckwort.","created_at":"2021-09-28 20:00:47 +0700","updated_at":null}}'
+  recorded_at: Tue, 28 Sep 2021 13:00:47 GMT
+- request:
+    method: get
+    uri: http://localhost:3030/posts/17
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '550'
+    body:
+      encoding: UTF-8
+      string: '{"id":17,"title":"drizzle","body":"Fo rizzle every single one everybody
+        got they cups sippin'' on gin and juice the diggy rolling down the street
+        eighty degrees feel the breeze realer. Recognize if you was me and I was you
+        guess what? hizzouse plizzay it''s 1993 everybody got they cups. Mr. buckwort
+        smokin'' weed the Dogg Pound how we do it rizzide fo rizzle. With my mind
+        on my money the dopest zig zag smoke real deal Holyfield fo rizzle Mr. Buckwort.","created_at":"2021-09-28
+        20:00:47 +0700","updated_at":null,"comments_path":"/posts/17/comments"}'
+  recorded_at: Tue, 28 Sep 2021 13:00:47 GMT
+recorded_with: VCR 6.0.0
